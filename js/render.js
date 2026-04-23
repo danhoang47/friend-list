@@ -25,6 +25,7 @@ function createCard(friend, group, index, filter) {
   card.innerHTML =
     '<div class="avatar" style="background:' + color + '">' + getInitials(friend.name) + '</div>' +
     '<span class="name">' + nameHtml + '</span>' +
+    '<button class="btn-remove" data-id="' + friend.id + '" data-group="' + group + '">&times;</button>' +
     '<span class="handle">⋮⋮</span>';
 
   return card;

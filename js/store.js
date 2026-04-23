@@ -72,3 +72,23 @@ export function addGroup(name) {
   
   return key;
 }
+
+export function addFriend(group, name) {
+  if (!friends[group]) return false;
+  
+  const allFriends = Object.values(friends).flat();
+  const maxId = allFriends.reduce((max, f) => Math.max(max, f.id), 0);
+  
+  friends[group].push({ id: maxId + 1, name });
+  return true;
+}
+
+export function removeFriend(group, id) {
+  if (!friends[group]) return false;
+  const index = friends[group].findIndex(f => f.id == id);
+  if (index > -1) {
+    friends[group].splice(index, 1);
+    return true;
+  }
+  return false;
+}

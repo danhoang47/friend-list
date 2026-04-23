@@ -17,6 +17,7 @@
   <header>
     <h1>Friend List</h1>
     <div class="header-actions">
+      <button id="open-add-friend" class="btn-add">+ Add Friend</button>
       <button id="add-group" class="btn-add">+ New Group</button>
       <div class="search-wrap">
         <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round">
@@ -34,6 +35,16 @@
     <div class="modal-actions">
       <button id="modal-cancel" class="btn-cancel">Cancel</button>
       <button id="modal-create" class="btn-create">Create</button>
+    </div>
+  </dialog>
+
+  <dialog id="add-friend-modal">
+    <h3>Add New Friend</h3>
+    <input type="text" id="friend-name-input" placeholder="Enter friend name...">
+    <select id="friend-group-select"></select>
+    <div class="modal-actions">
+      <button id="friend-modal-cancel" class="btn-cancel">Cancel</button>
+      <button id="friend-modal-create" class="btn-create">Add</button>
     </div>
   </dialog>
 
