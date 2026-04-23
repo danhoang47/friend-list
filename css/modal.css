@@ -1,0 +1,69 @@
+#create-modal {
+  background: #1a1a2e;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 28px;
+  width: 360px;
+  color: #e2e8f0;
+  margin: auto;
+}
+
+#create-modal::backdrop {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#create-modal h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+#create-modal input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 12px 16px;
+  color: #e2e8f0;
+  font-size: 15px;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+#create-modal input:focus {
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.btn-cancel,
+.btn-create {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+}
+
+.btn-cancel {
+  background: transparent;
+  color: #94a3b8;
+}
+
+.btn-cancel:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.btn-create {
+  background: rgba(255, 255, 255, 0.1);
+  color: #e2e8f0;
+}
+
+.btn-create:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
